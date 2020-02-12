@@ -31,6 +31,10 @@
         .carousel, .item, .active {
             height: 100%;
         }
+        
+        img {
+            object-fit: contain;
+        }
     </style>
 
 </head>
@@ -40,31 +44,31 @@
     
     
     
-    <div id="demo" class="carousel slide" data-ride="carousel">
+     <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-  </ul>
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
 
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://picsum.photos/1920/600" alt="placeholder1">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/1920/600" alt="placeholder2">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/1920/600" alt="placeholder3">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/1920/600" alt="placeholder4">
-    </div>  
-  </div>
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/1920/600" alt="placeholder1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/600" alt="placeholder2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/600" alt="placeholder3">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/600" alt="placeholder4">
+        </div>  
+      </div>
 
   <!-- Left and right controls -->
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -74,7 +78,7 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 
-</div>
+ </div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -98,6 +102,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#coming-soon">Coming Soon</a>
+          </li>  
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
@@ -154,6 +161,45 @@
       </div>
     </div>
   </section>
+    
+    
+  <!-- Service NUMBER 2 -->  
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">More Services</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Bank Stuff</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">More Bank Stuff</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Even More Bank Stuff</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+      </div>
+    </div>
+  </section>    
 
   <!-- Portfolio Grid -->
   <section class="bg-light page-section" id="portfolio">
@@ -165,7 +211,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -179,7 +225,7 @@
             <p class="text-muted">Illustration</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -193,7 +239,7 @@
             <p class="text-muted">Graphic Design</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -207,7 +253,7 @@
             <p class="text-muted">Identity</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -221,7 +267,7 @@
             <p class="text-muted">Branding</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -235,7 +281,7 @@
             <p class="text-muted">Website Design</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -249,6 +295,34 @@
             <p class="text-muted">Photography</p>
           </div>
         </div>
+        <div class="col-md-6 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Threads</h4>
+            <p class="text-muted">Illustration</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Threads</h4>
+            <p class="text-muted">Illustration</p>
+          </div>
+        </div>  
       </div>
     </div>
   </section>
@@ -307,7 +381,23 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted">
+            <li class = "timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2009-2011</h4>
+                  <h4 class="subheading">Our Humble Beginnings</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+              </div>
+            </li>    
+              
+            
+            <li>
               <div class="timeline-image">
                 <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
               </div>
@@ -321,6 +411,7 @@
                 </div>
               </div>
             </li>
+              
             <li class="timeline-inverted">
               <div class="timeline-image">
                 <h4>Be Part
@@ -328,14 +419,30 @@
                   <br>Story!</h4>
               </div>
             </li>
+
           </ul>
         </div>
       </div>
     </div>
   </section>
+    
+  <!-- COMING SOON SECTION BOOOOIIIII -->
+  <section class = "bg-light page-section" id = "coming-soon">
+      <div class = "container">
+          <div class = "row">
+              <div  class = "col-lg-12 text-center">
+                  <h2 class = "section-heading text-uppercase"> Coming Soon!!!</h2>
+                  <h3 class = "section-subheading  text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              </div>
+          </div>
+      </div> 
+  </section>
+    
+    
+    
 
   <!-- Team -->
-  <section class="bg-light page-section" id="team">
+  <section class="page-section" id="team">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
